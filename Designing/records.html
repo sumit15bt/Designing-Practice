@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Records</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="record.css">
+	<script type="text/javascript">
+			​function check(link) {
+			    if (link.className != "visited") {
+			       //alert("new");
+			       link.className = "visited";
+			       return true;     
+			    }
+		    //alert("old");
+		    return false;
+			}
+
+	</script>
+</head>
+<body>
+
+
+<div class="container " >
+            <div class="row">
+                <div class="col-lg-1" ></div>
+                <div class="col-lg-10 box">
+                	<h1>Health Record &nbsp<a class="btn btn-success" href="#"> Add New Medical Visit </a></h1>
+                	<hr class="drop_shadow">
+                	<h1 align="center">Person Detail</h1>	
+                	<div class="container">
+                		<div class="row">
+                			<div class="col-lg-12">
+                				 <ul style="list-style-type:square;">
+									  <li><h4>Adhar no. </h4></li>
+									  <li><h4>Name </h4></li>
+									  <li><h4>Birth Date</h4></li>
+									  <li><h4>Phone Number</h4></li>
+									  <li><h4>Address</h4></li>
+								</ul> 
+                			</div>
+                		</div>
+                	</div>
+                	
+                	<hr class="flare">
+
+                	<div class="container">
+                		<div class="row">
+                			<div class="col-lg-10">
+                				 <table class="table table-hover">
+                				 	 <center><h4 style="color: BLUE">Medical Visits</h4>
+                				 			 <p>NOTE<sup>**</sup> Record is edittable only once ...!!</p>
+                				 	</center>
+			  						<thead>
+									    <tr>
+									      <th>Sno.</th>
+									      <th>Attending Doctor</th>
+									      <th>Doctor's Practictioner No</th>
+									      <th>Suffering</th>
+									      <th>Medication</th>
+									      <th>Date & Time</th>
+									      <th></th>
+									      <th></th>
+									    </tr>
+ 									 </thead>
+ 									 <tbody>
+									    <tr>
+									      <td>455</td>
+									      <td>Dr.mithilesh Pnadey</td>
+									      <td>255iu48</td>
+									      <td>Diabetes</td>
+									      <td>Medication</td>
+									      <td>Date & Time</td>
+									      <th><a href="record.html" class="btn btn-default">View</a></th>
+									      <th><a href="#" class="btn btn-default" onclick="return check(this);">Edit</a></th>
+									    </tr>
+									    <tr>
+
+									    </tr>
+									  </tbody>
+								</table>
+                			</div>
+                		</div>
+                	</div>
+				</div>
+            <div class="col-lg-3" ></div>
+     </div>
+</div>
+	
+</body>
+</html>
